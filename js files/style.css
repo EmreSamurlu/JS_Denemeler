@@ -1,6 +1,11 @@
 .text-primary {
-    color: blue ;
+  color: blue;
 }
+
 .text-danger {
-    color: red;
+  color: red;
 }
+
+body {
+  background-color: black;
+}/*# sourceMappingURL=style.css.map */
