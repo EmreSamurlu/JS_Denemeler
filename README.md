@@ -1,3 +1,3 @@
 # JS_Denemeler
 Study JS 
-26.07.2021 Tarihinde güncellendi.
+Tüm dosyalar düzenlendi ve klasörlendi (28.07.2021 - 01:00).
