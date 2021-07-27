@@ -46,7 +46,7 @@ function cuttingFunction(event) {
  */
 
 //* Form etkinlikleri
-
+/* 
 const color = document.querySelector("#select");
 color.addEventListener("change", selectBox);
 
@@ -54,3 +54,20 @@ function selectBox(event){
     console.log("Etkinlik Tipi : " + event.type);
     console.log("değer : " + event.target.value);
 }
+ */
+
+//* Kabarcıklanma Etkinliği (Event Bubbling)
+
+const selectBox = document.querySelector("#selectColor");
+const button = document.querySelector("#button");
+const form = document.querySelector(".inputText");
+const cerceve = document.querySelector(".container");
+selectBox.addEventListener("click", function(){
+    console.log("selectBox");
+});
+form.addEventListener("click", function(){
+    console.log("form")
+}, true);
+cerceve.addEventListener("click", function(){
+    console.log("cerceve");
+}, false);
