@@ -32,3 +32,14 @@ console.log("hello world");
 
 ```
 
+tek satır kod bloğu için başa ve sona ters tırnak kullanılır.(`)
+
+`console.log("Merhaba Dünya)`
+
+Tablo Çizimi (aradaki stil satırı, bir sonraki satır için geçerli.)
+
+| Ürün No: | Ürün Açıklaması |Ürün Fiyatı |
+|:---| :---: | ---: | 
+|1 | Açıklama | Fiyat|
+
+> alıntı satırı.
