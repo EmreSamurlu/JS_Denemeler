@@ -4,19 +4,55 @@
         <title>Hello World!</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./style.css" type="text/css">
+        <!-- <link rel="stylesheet" href="./style.css" type="text/css"> -->
         <!--  alttaki satır web sayfasının content ile belirtilen saniye sürede yenilenmesini sağlar. -->
         <!-- <meta http-equiv="refresh" content="5">  -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     </head>
     <body>
         <h1>JS Çalışma - Kodluyoruz / Patika - FrontEnd Patikası</h1>
 
-            <!-- * 26 LocalStorage Bölüm sonu egzersiz -->
+            <!-- * 27 Formlar ve Form Submit-->
+<!-- 
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-sm-8 offset-sm-2">
+                        <form id="userForm">
+                            <input type="number" name="score" id="score">
+                            <button type="submit" class="btn btn-success">Gönder</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+-->
 
+            <!-- * 28 Input İçerisinden Değer Almak -->
+
+
+
+            <!-- * 27 Formlar ve Form Submit (practice - get) -->
+<!-- 
+            <form method="get">
+                <input type="text" name="username" placeholder="Kullanıcı adı giriniz.">
+                <input type="password" name="password" placeholder="Şifrenizi giriniz.">
+                <button type="submit">Giriş</button>
+            </form>
+-->
+            <!-- * 27 Formlar ve Form Submit (practice - post) -->
+<!-- 
+            <form action="/js files/6-Formlar/27-form-ve-form-submit-yontemi.js" onsubmit="handleSubmit(e)" method="post">
+                <input type="text" name="username" placeholder="Kullanıcı Adı Giriniz." onchange="handleChange(event)">
+                <input type="password" name="password" placeholder="Şifrenizi Giriniz." onchange="handleChange(event)">
+                <button type="submit">Giriş</button>
+            </form>
+-->
+
+            <!-- * 26 LocalStorage Bölüm sonu egzersiz -->
+<!-- 
             <h3 id="counter">100</h3>
             <button id="increase">Artır</button>
             <button id="decrease">Azalt</button>
-
+-->
             <!-- * 25 LocalStorage İçerisine Farklı Türde Veriler Eklemek -->
             
             <!-- * 24 Local Storage -->
@@ -148,6 +184,10 @@
             -->
         <!--<input type="button" id="btnClick" value="Tıkla!!"/>-->
 
+            <!-- * bootstrap bundle  -->
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
         <!-- <script src="./1-Degiskenler_ile_calismak/01-hello-world.js"></script> -->
         <!-- <script src="./1-Degiskenler_ile_calismak/02-degisken-tanimlama.js"></script>-->
         <!-- <script src="./1-Degiskenler_ile_calismak/04-number-veri-turu-ile-calisma.js"></script>-->
@@ -172,7 +212,9 @@
         <!-- <script src="./4-Fonksiyonlar/23-Functions-bolum-sonu.js"></script> -->
         <!-- <script src="./5-LocalStorage/24-Local-Storage-veri-ekleme-düzenleme-silme.js"></script> -->
         <!-- <script src="./5-LocalStorage/25-LocalStorage-icerisine-farkli-türde-veri-ekleme.js"></script> -->
-        <script src="./5-LocalStorage/26-LocalStorage-bolum-sonu.js"></script>
+        <!-- <script src="./5-LocalStorage/26-LocalStorage-bolum-sonu.js"></script> -->
+        <!-- <script src="./6-Formlar/27-form-ve-form-submit-yontemi.js"></script> -->
+        <script src="./6-Formlar/28-input-icerisinden-deger-almak.js"></script>
     </body>
     
 </html>
