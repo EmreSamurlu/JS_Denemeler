@@ -20,19 +20,17 @@ const alertFunction = (title, message, className="warning") => `
 </div>
 `
 
-
-
 function formHandler(event) {
     event.preventDefault()
     const USER_NAME = document.querySelector("#username")
     const SCORE = document.querySelector("#score")
-    
+
     if (USER_NAME.value && SCORE.value){
         addItem(USER_NAME.value, SCORE.value) // gönderdikten sonra sıfırladık
         USER_NAME.value = ""
         SCORE.value = ""
         alertDOM.innerHTML = alertFunction("Giriş Bilgisi","Bilgiler Başarı ile Girildi!", "success")
-    }else {
+    }else{
         alertDOM.innerHTML = alertFunction("Giriş Bilgisi","Eksik Bilgi Girişi Yapıldı!", "danger")
     }
 }
