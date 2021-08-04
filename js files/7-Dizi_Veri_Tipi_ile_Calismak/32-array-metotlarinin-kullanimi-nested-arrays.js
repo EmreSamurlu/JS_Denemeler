@@ -238,6 +238,7 @@ console.log("----")
 console.log("---- Pekiştirme Soruları ----");
 
 // soru 1
+console.log("---- 1. Soru. ----")
 let dizi = [2,5,8,11,15,17];
 
 let buyuk10 = dizi.filter(function (sayi) {
@@ -253,7 +254,10 @@ console.log(carpma);
 
 console.log("---- 1. soru çözüldü. ----");
 
-// soru 2
+console.log("----");
+
+// soru 2 //* bir sayıdan büyük olan sonuçları bulma
+console.log("---- 2. Soru. ----");
 let dizi2 = [3,6,9,14,16];
 /* 
 let buyuk5 = dizi2.some(function myFunction(sayi) {
@@ -262,7 +266,28 @@ let buyuk5 = dizi2.some(function myFunction(sayi) {
 console.log(buyuk5)
  */
 function myFunction(dizi2) {
-    return dizi2 > 10;
+    return function(bigvalue){
+        return (bigvalue >= dizi2);
+    };
+};
+
+let result = dizi2.filter(myFunction(5));
+
+console.log(result);
+console.log("---- 2. Soru Çözüldü. ----");
+
+console.log("----");
+
+// soru 3 //* sayıların çarpımının sonucu
+console.log("---- 3. soru ----");
+
+let dizi3 = [2,3,4];
+
+function carpim(acc, sayi) {
+    return acc*sayi ;
 }
-myFunction(dizi2).some;
-console.log(myFunction())
+
+const answer3 = dizi3.reduce(carpim); // fonksiyonda çarpımları hesapladık reduce ile toplamalarını sağladık.
+console.log(answer3);
+
+console.log("--- 3. soru çözüldü. ----")
