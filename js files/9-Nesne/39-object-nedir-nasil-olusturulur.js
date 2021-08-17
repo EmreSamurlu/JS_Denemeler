@@ -18,3 +18,16 @@ console.log("item2", typeof(item2));
 let item3 = {}
 let item4 = new Object()
 
+let countriesTalkSpanish = {
+    continent: "South America",
+    language: "Spanish"
+};
+
+//* Object.create Yöntemi
+
+let uruguay = Object.create(countriesTalkSpanish);
+uruguay.capital = "Montevideo";
+uruguay.language = "Spanish";
+
+console.log(uruguay);
+console.log(uruguay.capital);
