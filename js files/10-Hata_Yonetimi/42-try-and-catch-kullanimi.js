@@ -8,9 +8,11 @@ try {
     console.log(error)
     products = [1, 2, 3]
     products.forEach(item => console.log(item));
+} finally {
+
+    console.log("Hata Yönetimi Düzgün Çalışıyor.")
+
+    let info = "kodluyoruz"
+    console.log(info)
+
 }
-
-console.log("Hata Yönetimi Düzgün Çalışıyor.")
-
-let info = "kodluyoruz"
-console.log(info)
